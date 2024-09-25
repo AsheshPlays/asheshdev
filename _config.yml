@@ -53,3 +53,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+baseurl: "/asheshdev" # Set this to the repository name
+url: "https://asheshplays.github.io" # Your GitHub Pages URL
+
