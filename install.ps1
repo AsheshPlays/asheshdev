@@ -35,8 +35,8 @@ Write-Host-Color "Preparing source files..." "Cyan"
 # In a real scenario: git clone https://github.com/AsheshDev/zWSL-Manager.git .
 
 # 5. Install Dependencies
-Write-Host-Color "Installing dependencies (npm install)..." "Cyan"
-npm install --no-audit --no-fund
+Write-Host-Color "Installing dependencies (npm.cmd install)..." "Cyan"
+& "npm.cmd" install --no-audit --no-fund
 
 # 6. Create Desktop Shortcut
 Write-Host-Color "Creating desktop shortcut..." "Cyan"
