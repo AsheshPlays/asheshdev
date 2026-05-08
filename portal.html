@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>zWSL Manager | Unified Hub</title>
+    
+    <!-- External Dependencies -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Centralized Styles -->
+    <link rel="stylesheet" href="portal.css">
+</head>
+
+<body>
+    <div class="atmosphere"></div>
+
+    <div class="portal-container">
+        <header style="text-align: center; padding-top: 5rem; margin-bottom: 4rem;">
+            <div style="position: relative; display: inline-block;">
+                <img src="https://raw.githubusercontent.com/AsheshDev/www/main/res/weblogo/asheshdevelopment.png" 
+                     alt="Logo" 
+                     style="max-height: 140px; filter: drop-shadow(0 0 30px rgba(59,130,246,0.4));">
+            </div>
+            <h1 style="font-size: 4rem; font-weight: 800; letter-spacing: -2px; margin-top: 1.5rem; margin-bottom: 0;">
+                zWSL Manager
+            </h1>
+            <p style="color: #94a3b8; font-size: 1.25rem; font-weight: 300; max-width: 600px; margin: 1rem auto;">
+                The ultimate visual mission control for Windows Subsystem for Linux.
+            </p>
+        </header>
+
+        <main>
+            <div class="glass-panel" style="text-align: center; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);"></div>
+                
+                <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">One Command Deployment</h2>
+                <p style="color: #94a3b8; margin-bottom: 2.5rem;">
+                    Our automated installer handles Node.js, environment variables, and desktop shortcuts.
+                </p>
+
+                <button id="installBtn" class="btn-launch">
+                    <i class="bi bi-terminal-fill"></i>
+                    Copy Install Command
+                </button>
+
+                <div class="terminal-window" style="max-width: 600px; margin: 3rem auto 0; text-align: left;">
+                    <div class="terminal-header">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                        <span style="font-size: 0.75rem; color: #475569; margin-left: 10px;">powershell.exe</span>
+                    </div>
+                    <div class="terminal-body" id="terminalContent">
+                        <p style="color: #64748b; margin-bottom: 10px;"># Run as Administrator</p>
+                        <p><span class="cmd-text">PS C:\></span> iwr -useb 'https://asheshdev.app/install.ps1' | iex</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                <div class="glass-panel" style="padding: 2rem;">
+                    <i class="bi bi-cpu" style="font-size: 2rem; color: #3b82f6;"></i>
+                    <h3 style="margin: 1.5rem 0 0.5rem 0;">Auto-Optimization</h3>
+                    <p style="color: #64748b; font-size: 0.9rem;">Automatically manages kernel updates and resource allocation.</p>
+                </div>
+                <div class="glass-panel" style="padding: 2rem;">
+                    <i class="bi bi-shield-check" style="font-size: 2rem; color: #10b981;"></i>
+                    <h3 style="margin: 1.5rem 0 0.5rem 0;">Secure by Default</h3>
+                    <p style="color: #64748b; font-size: 0.9rem;">Local-first architecture ensuring your data stays on your machine.</p>
+                </div>
+                <div class="glass-panel" style="padding: 2rem;">
+                    <i class="bi bi-lightning-charge" style="font-size: 2rem; color: #f59e0b;"></i>
+                    <h3 style="margin: 1.5rem 0 0.5rem 0;">Instant Setup</h3>
+                    <p style="color: #64748b; font-size: 0.9rem;">From zero to Linux hero in less than 60 seconds.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer style="margin-top: 8rem; padding-bottom: 4rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 4rem;">
+            <div class="social-links">
+                <a href="https://youtube.com/@ashesh.genesis" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://facebook.com/asheshdevcore" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/AsheshDev" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+            </div>
+            <p style="color: #475569; font-size: 0.8rem; margin-top: 2rem;">
+                &copy; 2024 Ashesh Development. Designed for the Next Generation of Developers.
+            </p>
+        </footer>
+    </div>
+
+    <!-- Interactivity -->
+    <script src="portal.js"></script>
+</body>
+</html>

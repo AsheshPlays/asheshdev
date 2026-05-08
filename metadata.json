@@ -1,0 +1,6 @@
+{
+  "name": "zWSL Manager",
+  "description": "A powerful and intuitive tool to manage your Windows Subsystem for Linux distributions, applications, and system settings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
