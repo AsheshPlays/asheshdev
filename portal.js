@@ -13,7 +13,7 @@ function setupCopyAction() {
     if (!installBtn) return;
 
     const originalHTML = installBtn.innerHTML;
-    const command = "iwr -useb 'https://raw.githubusercontent.com/AsheshDev/zWSL-Manager/main/install.ps1' | iex";
+    const command = "iwr -useb 'https://raw.githubusercontent.com/AsheshPlays/asheshdev/refs/heads/main/install.ps1' | iex";
 
     installBtn.addEventListener('click', async () => {
         try {

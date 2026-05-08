@@ -9,7 +9,10 @@ import {
   BookOpen,
   ArrowRight,
   User,
-  ExternalLink
+  ExternalLink,
+  FileCode,
+  Facebook,
+  Youtube
 } from 'lucide-react';
 import { motion } from 'motion/react';
 
@@ -156,19 +159,19 @@ export default function About() {
             </p>
             
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-6">
-              <a href="#" className="btn-secondary py-2 px-3 text-sm">
+              <a href="https://github.com/AsheshPlays" target="_blank" rel="noopener noreferrer" className="btn-secondary py-2 px-3 text-sm">
                 <Github className="w-4 h-4" />
                 GitHub
               </a>
-              <a href="#" className="btn-secondary py-2 px-3 text-sm">
-                <Twitter className="w-4 h-4" />
-                @AsheshDev
+              <a href="https://www.facebook.com/asheshdevcore" target="_blank" rel="noopener noreferrer" className="btn-secondary py-2 px-3 text-sm">
+                <Facebook className="w-4 h-4" />
+                Facebook
               </a>
-              <a href="#" className="btn-secondary py-2 px-3 text-sm">
-                <Globe className="w-4 h-4" />
-                Portfolio
+              <a href="https://www.youtube.com/@ashesh.genesis" target="_blank" rel="noopener noreferrer" className="btn-secondary py-2 px-3 text-sm">
+                <Youtube className="w-4 h-4" />
+                YouTube
               </a>
-              <a href="mailto:contact@ashesh.dev" className="btn-secondary py-2 px-3 text-sm">
+              <a href="mailto:itgraphicsthepearl@gmail.com" className="btn-secondary py-2 px-3 text-sm">
                 <Mail className="w-4 h-4" />
                 Contact
               </a>
